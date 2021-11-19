@@ -47,9 +47,15 @@ public class SharedPreference {
     public Server getServer() {
 
         Server server = new Server(
-                mPreference.getString(SERVER_COUNTRY,"Japan"),
+                /*mPreference.getString(SERVER_COUNTRY,"Japan"),
                 mPreference.getString(SERVER_FLAG,getImgURL(R.drawable.japan)),
                 mPreference.getString(SERVER_OVPN,"japan.ovpn"),
+                mPreference.getString(SERVER_OVPN_USER,"vpn"),
+                mPreference.getString(SERVER_OVPN_PASSWORD,"vpn")*/
+
+                mPreference.getString(SERVER_COUNTRY,"Test OpenVPN Profile"),
+                mPreference.getString(SERVER_FLAG,getImgURL(R.drawable.rokomari)),
+                mPreference.getString(SERVER_OVPN,"pathshalatest.ovpn"),
                 mPreference.getString(SERVER_OVPN_USER,"vpn"),
                 mPreference.getString(SERVER_OVPN_PASSWORD,"vpn")
         );
